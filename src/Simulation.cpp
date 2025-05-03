@@ -74,10 +74,19 @@ void Simulation::addParticle(std::unique_ptr<Particle> particle) {
 }
 
 void Simulation::removeEscapedParticles() {
+    particles.erase(std::remove_if(particles.begin(), particles.end(),
+                                   [this](const std::unique_ptr<Particle>& p) {
+                                       double x = p->getX();
+                                       double y = p->getY();
+                                       return std::abs(x) > fieldSize / 2 || std::abs(y) > fieldSize / 2;
+                                   }),
+                    particles.end()
+    );
 }
 
+
 size_t Simulation::getParticleCount() const {
-    return 2*particles.size();
+    return particles.size();
 }
 
 const std::vector<std::unique_ptr<Particle>>& Simulation::getParticles() const {
@@ -141,21 +150,17 @@ void Simulation::applyForces(double dt) {
         double y = particle->getY();
         double distance = std::sqrt(x*x + y*y);
         double force = distance * 0.01;
-        
-        double ax = force * (x > 0 ? 1 : -1);  
-        double ay = force * (y > 0 ? 1 : -1); 
-        
-        double vx = particle->getVX() + ax;  
-        double vy = particle->getVY() + ay; 
-                
-        if (numThreads > 1) {
-            std::this_thread::sleep_for(std::chrono::microseconds(100));
-        }
-        else {
-            std::this_thread::sleep_for(std::chrono::microseconds(1));
-        }
+
+        double ax = force * (x > 0 ? 1 : -1);
+        double ay = force * (y > 0 ? 1 : -1);
+
+        double vx = particle->getVX() + ax * dt;
+        double vy = particle->getVY() + ay * dt;
+
+        particle->setVelocity(vx, vy);  // ADD THIS
     }
 }
+
 
 void Simulation::workerThread(size_t threadId) {
     while (running) {

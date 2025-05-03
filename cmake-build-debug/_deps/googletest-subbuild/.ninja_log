@@ -1,0 +1,21 @@
+# ninja log v5
+1	64	7679565103385944	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-mkdir	518d3f6d11c86924
+1	64	7679565103385944	C:/CODEX projects/cpp/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-mkdir	518d3f6d11c86924
+64	7862	7679565181362215	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download	eadb72e18da7378b
+64	7862	7679565181362215	C:/CODEX projects/cpp/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download	eadb72e18da7378b
+7862	8048	0	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-update	ff98c849a855e0d
+7862	8048	0	C:/CODEX projects/cpp/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-update	ff98c849a855e0d
+8048	8112	7679565183867870	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-patch	1d109eb4d3bb127d
+8048	8112	7679565183867870	C:/CODEX projects/cpp/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-patch	1d109eb4d3bb127d
+8112	8178	7679565184525063	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-configure	c5936e84247732fa
+8112	8178	7679565184525063	C:/CODEX projects/cpp/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-configure	c5936e84247732fa
+8179	8281	7679565185378926	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-build	240dbf35440ead34
+8179	8281	7679565185378926	C:/CODEX projects/cpp/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-build	240dbf35440ead34
+8281	8401	7679565186733899	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-install	ff71e0c1048d216a
+8281	8401	7679565186733899	C:/CODEX projects/cpp/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-install	ff71e0c1048d216a
+8401	8498	7679565187695635	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-test	d17004586b1b44d7
+8401	8498	7679565187695635	C:/CODEX projects/cpp/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-test	d17004586b1b44d7
+8498	8622	7679565188963958	CMakeFiles/googletest-populate-complete	a08077aa47da18ab
+8498	8622	7679565188963958	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-done	a08077aa47da18ab
+8498	8622	7679565188963958	C:/CODEX projects/cpp/cmake-build-debug/_deps/googletest-subbuild/CMakeFiles/googletest-populate-complete	a08077aa47da18ab
+8498	8622	7679565188963958	C:/CODEX projects/cpp/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-done	a08077aa47da18ab
