@@ -96,5 +96,14 @@ void ThreadManager::setNumThreads(size_t newNumThreads) {
 }
 
 void ThreadManager::processNextTask() {
-    // Typically not used in thread pools; tasks are processed in thread loop.
+    // Currently empty - should be implemented or removed
+}
+
+// Missing error handling in thread loop
+while (running) {
+try {
+// Existing task processing code
+} catch (...) {
+// Handle exceptions to prevent thread crashes
+}
 }
